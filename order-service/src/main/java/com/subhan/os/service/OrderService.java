@@ -25,7 +25,10 @@ public class OrderService {
 
     //   @Value("${microservice.payment-service.endpoints.endpoint.uri}")
     //   private String ENDPOINT_URL;
-    private String ENDPOINT_URL = "http://localhost:8082/payment/doPayment";
+    // private String ENDPOINT_URL = "http://localhost:8082/payment/doPayment";
+    private String ENDPOINT_URL = "http://PAYMENT-SERVICE:8082/payment/doPayment";
+
+
 
     public TransactionResponse saveOrder(TransactionRequest request) throws JsonProcessingException {
         String response = "";
